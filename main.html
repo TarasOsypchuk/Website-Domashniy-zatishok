@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="" type="image/jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__nav">
+                <div class="header__nav_group nav-group1">
+                    <p id="scroller-down" data-scroll-to="634">Каталог</p>
+                    <p id="scroller-down" data-scroll-to="1600">Відгуки</p>
+                    <p id="scroller-down" data-scroll-to="3000">Придбати</p>
+                </div>
+                <div class="header__nav_group nav-group2">
+                    <p>+380 95 123 1234</p>
+                    <a href="#"><img src="./assets/telegram-icon.svg" alt=""></a>
+                    <a href="#"><img src="./assets/instagram_icon.svg" alt=""></a>
+                    <a href="#"><img src="./assets/facebook_icon.svg" alt=""></a>
+                </div>
+
+            </div>
+            <h1>Домашній Затишок</h1>
+            <p class="header-title">Створюємо затишок у вашому домі.</p>
+            <p class="header-text">Ковдри, подушки та постіль — усе, щоб сон був комфортним, а ранок — приємним.
+                Натуральні
+                матеріали, турбота про якість і душа в кожній деталі</p>
+            <a id="scroller-down" data-scroll-to="3000" class="header-button">Зв’язатися</a>
+        </div>
+        <div class="header__info">
+            <div class="header__info_group">
+                <div class="header__info_group-title">Швидка доставка</div>
+                <div class="header__info_group-text">турбуємось, щоб ви швидше відчули комфорт</div>
+            </div>
+            <div class="header__info_group">
+                <div class="header__info_group-title">Якісна продукція</div>
+                <div class="header__info_group-text">продаємо речі, яким можна довіряти</div>
+            </div>
+            <div class="header__info_group">
+                <div class="header__info_group-title">Допомога з вибором</div>
+                <div class="header__info_group-text">допоможемо знайти саме ваше ідеальне поєднання</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="products">
+                <h2>Каталог</h2>
+                <div class="products__product">
+                    <div class="products__product_images">
+                        <img src="" alt="" class="products__product_images-big">
+                        <div class="products__product_images_others">
+                            <img src="" alt="" class="products__product_images_others-img">
+                            <img src="" alt="" class="products__product_images_others-img">
+                            <img src="" alt="" class="products__product_images_others-img">
+                        </div>
+                    </div>
+                    <div class="products__product_info">
+                        <div class="products__product_info-name">Пухнасті ковдрі</div>
+                        <div class="products__product_info-description">
+                            <p>Пухнасті ковдри - це ковдри з натуральним або штучним наповнювачем, що забезпечує їх
+                                легкість, м'якість та теплоту, створюючи відчуття ніби ковдри "невагомі".</p>
+                            <p>Догляд - це ковдри з натуральним або штучним наповнювачем, що забезпечує їх легкість,
+                                м'якість та теплоту, створюючи відчуття ніби ковдри "невагомі".створюючи відчуття ніби
+                                ковдри "невагомі".створюючи відчуття ніби ковдри "невагомі".створюючи відчуття ніби
+                                ковдри "невагомі".створюючи відчуття ніби ковдри "невагомі".</p>
+                            <p>Матеріал : Натуральна конопляна тканина</p>
+                        </div>
+                        <div class="products__product_info-price">Ціна : 1500грн<span>1900грн</span></div>
+                        <div class="products__product_info_colors" id="product-colors-selector">
+                            <p>Колір :</p>
+                            <div class="products__product_info_colors-color selected" data-color="#373737"
+                                style="background-color: #373737;"></div>
+                            <div class="products__product_info_colors-color" data-color="#fafafa"
+                                style="background-color: #fafafa;"></div>
+                            <div class="products__product_info_colors-color" data-color="#B572D4"
+                                style="background-color: #B572D4;"></div>
+                            <div class="products__product_info_colors-color" data-color="#75C57E"
+                                style="background-color: #75C57E;"></div>
+                        </div>
+                        <div class="products__product_info_size size-selector">
+                            <p>Розмір :</p>
+
+                            <button class="products__product_info_size-display" aria-expanded="false">
+                                <span class="selected-size-text" data-value="XL">XL</span>
+                                <img src="./assets/dropdown_icon.svg" alt="Іконка випадаючого списку">
+                            </button>
+
+                            <ul class="products__product_info_size-options-list size-options-list" hidden>
+                                <li data-value="S">S</li>
+                                <li data-value="M">M</li>
+                                <li data-value="L">L</li>
+                                <li data-value="XL" class="selected">XL</li>
+                                <li data-value="XXL">XXL</li>
+                            </ul>
+                        </div>
+                        <a id="scroller-down" data-scroll-to="3000" class="products__product_info-button">Перейти до
+                            заповнення форм</a>
+                    </div>
+                </div>
+                <div class="products__product">
+                    <div class="products__product_images">
+                        <img src="" alt="" class="products__product_images-big">
+                        <div class="products__product_images_others">
+                            <img src="" alt="" class="products__product_images_others-img">
+                            <img src="" alt="" class="products__product_images_others-img">
+                            <img src="" alt="" class="products__product_images_others-img">
+                        </div>
+                    </div>
+                    <div class="products__product_info">
+                        <div class="products__product_info-name">Пухнасті ковдрі</div>
+                        <div class="products__product_info-description">
+                            <p>Пухнасті ковдри - це ковдри з натуральним або штучним наповнювачем, що забезпечує їх
+                                легкість, м'якість та теплоту, створюючи відчуття ніби ковдри "невагомі".</p>
+                            <p>Догляд - це ковдри з натуральним або штучним наповнювачем, що забезпечує їх легкість,
+                                м'якість та теплоту, створюючи відчуття ніби ковдри "невагомі".створюючи відчуття ніби
+                                ковдри "невагомі".створюючи відчуття ніби ковдри "невагомі".створюючи відчуття ніби
+                                ковдри "невагомі".створюючи відчуття ніби ковдри "невагомі".</p>
+                            <p>Матеріал : Натуральна конопляна тканина</p>
+                        </div>
+                        <div class="products__product_info-price">Ціна : 1500грн<span>1900грн</span></div>
+                        <div class="products__product_info_colors" id="product-colors-selector">
+                            <p>Колір :</p>
+                            <div class="products__product_info_colors-color selected" data-color="#373737"
+                                style="background-color: #373737;"></div>
+                            <div class="products__product_info_colors-color" data-color="#fafafa"
+                                style="background-color: #fafafa;"></div>
+                            <div class="products__product_info_colors-color" data-color="#B572D4"
+                                style="background-color: #B572D4;"></div>
+                            <div class="products__product_info_colors-color" data-color="#75C57E"
+                                style="background-color: #75C57E;"></div>
+                        </div>
+                        <div class="products__product_info_size size-selector">
+                            <p>Розмір :</p>
+
+                            <button class="products__product_info_size-display" aria-expanded="false">
+                                <span class="selected-size-text" data-value="XL">XL</span>
+                                <img src="./assets/dropdown_icon.svg" alt="Іконка випадаючого списку">
+                            </button>
+
+                            <ul class="products__product_info_size-options-list size-options-list" hidden>
+                                <li data-value="S">S</li>
+                                <li data-value="M">M</li>
+                                <li data-value="L">L</li>
+                                <li data-value="XL" class="selected">XL</li>
+                                <li data-value="XXL">XXL</li>
+                            </ul>
+                        </div>
+                        <a id="scroller-down" data-scroll-to="3000" class="products__product_info-button">Перейти до
+                            заповнення форм</a>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <h2>Відгуки</h2>
+                <div class="reviews__images">
+                    <div class="reviews__images-arrow left-arrow"><img src="./assets/arrow_icon.svg" alt="Назад"></div>
+                    <div class="reviews__images-arrow right-arrow"><img src="./assets/arrowRight_icon.svg" alt="Вперед">
+                    </div>
+
+                    <img src="./assets/review-1.jpg" class="reviews__images-review" alt="Відгук 1">
+                    <img src="./assets/review-2.jpg" class="reviews__images-review" alt="Відгук 2">
+                    <img src="./assets/review-3.jpg" class="reviews__images-review" alt="Відгук 3">
+                    <img src="./assets/review-4.jpg" class="reviews__images-review" alt="Відгук 4">
+                    <img src="./assets/review-5.jpg" class="reviews__images-review" alt="Відгук 5">
+                    <img src="./assets/review-6.jpg" class="reviews__images-review" alt="Відгук 6">
+                </div>
+            </section>
+            <section class="instruction">
+                <h2>Як придбати?</h2>
+                <div class="instruction__group">
+                    <div class="instruction__group_guide">
+                        <div class="instruction__group_guide-title">1</div>
+                        <p class="instruction__group_guide-text">Внизу є форми, заповніть їх і ми передзвонимо до вас як
+                            тільки зможемо</p>
+                    </div>
+                    <h2>Або</h2>
+                    <div class="instruction__group_guide">
+                        <div class="instruction__group_guide-title">2</div>
+                        <p class="instruction__group_guide-text">Подзвоніть нам або напишіть нам у телеграм, інстаграм,
+                            фейсбук.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <select class="footer__product-choose" name="product" id="product-select">
+            <option value="" disabled selected>Товар</option>
+            <option value="1">Пухнасті ковдри</option>
+            <option value="2">Ковдри 4 сезони</option>
+        </select>
+
+        <div class="footer_group">
+            <select class="footer__product-choose" name="color" id="color-select" disabled>
+                <option value="" disabled selected>Колір</option>
+                <option value="white">Білий</option>
+                <option value="black">Чорний</option>
+            </select>
+            <select class="footer__product-choose" name="size" id="size-select" disabled>
+                <option value="" disabled selected>Розмір</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+            </select>
+        </div>
+
+        <input type="text" placeholder="Ваш номер телефону" id="phone-input">
+        <input type="text" placeholder="Як до вас звертатися" id="name-input">
+
+        <button type="submit" class="footer-button" id="submit-button" disabled>Відправити</button>
+
+        <div class="footer__bottom">
+            <h3>Домашній Затишок</h3>
+            <div class="footer__bottom_group">
+                <a href="#"><img src="./assets/telegram-icon-white.svg" alt=""></a>
+                <a href="#"><img src="./assets/instagram_icon-white.svg" alt=""></a>
+                <a href="#"><img src="./assets/facebook_icon-white.svg" alt=""></a>
+            </div>
+            <p>domashniysatishok@gmail.com</p>
+        </div>
+    </footer>
+    <div class="popup-overlay" id="success-popup" hidden>
+        <div class="popup-content">
+            <p>Дані успішно відправлено!</p>
+            <button id="popup-close-button" class="footer-button">Закрити</button>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+$black-100: #373737;
+$white-100: #fafafa;
+$blue-100: #5dade2;
+
+@mixin h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 128px;
+  font-weight: 400;
+}
+@mixin h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+@mixin h3 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+@mixin accentButton {
+  padding: 10px 20px;
+  color: $white-100;
+  background: $blue-100;
+  border-radius: 12px;
+  transition: all 0.5s;
+  &:hover{
+    background: #0492f1;
+  }
+}
