@@ -155,22 +155,47 @@ main .products__product {
   align-items: center;
   gap: 20px;
 }
+main .products__product_images {
+  position: relative;
+}
+main .products__product_images-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(93, 173, 226, 0.3647058824);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+}
+main .products__product_images-arrow img {
+  width: 50px;
+  height: 50px;
+}
+main .products__product_images .prright-arrow {
+  right: 20px;
+  top: 45%;
+  transition: all 0.5s;
+}
+main .products__product_images .prright-arrow:hover {
+  transform: scale(1.1);
+  background: #0492f1;
+}
+main .products__product_images .prleft-arrow {
+  left: 20px;
+  top: 45%;
+  transition: all 0.5s;
+}
+main .products__product_images .prleft-arrow:hover {
+  transform: scale(1.1);
+  background: #0492f1;
+}
 main .products__product_images-big {
   background-color: #c3c3c3;
   width: 560px;
-  height: 300px;
-  margin-bottom: 4px;
+  height: 420px;
   border-radius: 40px;
-}
-main .products__product_images_others {
-  display: flex;
-  gap: 4px;
-}
-main .products__product_images_others-img {
-  background-color: #c3c3c3;
-  width: 184px;
-  height: 78px;
-  border-radius: 20px;
 }
 main .products__product_info {
   display: flex;
@@ -209,22 +234,6 @@ main .products__product_info_colors-color.selected {
   border-color: #333;
   transform: scale(1.16);
   transition: transform 0.2s;
-}
-main .products__product_info_size {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-main .products__product_info_size-choose {
-  width: 60px;
-  height: 22px;
-  border: 1px solid #373737;
-  border-radius: 4px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px;
 }
 main .products__product_info-button {
   padding: 10px 20px;
@@ -370,9 +379,6 @@ footer .footer_group {
   display: flex;
   gap: 20px;
 }
-footer .footer_group .footer__product-choose {
-  width: 290px;
-}
 footer .footer-button {
   padding: 10px 20px;
   color: #fafafa;
@@ -411,51 +417,6 @@ footer input {
 }
 footer input ::placeholder {
   color: rgba(55, 55, 55, 0.6470588235);
-}
-
-.products__product_info_size {
-  position: relative; /* Необхідно для позиціонування списку опцій */
-  /* Додаткові стилі для розмірів */
-}
-
-/* Стиль кнопки, що відображає вибір */
-.products__product_info_size-display {
-  /* Ваші поточні стилі для кнопки */
-  padding: 2px 12px;
-  border: 1px solid #ccc;
-  background: #fafafa;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 60px;
-  border-radius: 5px;
-}
-
-/* Схований список опцій */
-.products__product_info_size-options-list {
-  position: absolute; /* Розміщуємо поверх іншого контенту */
-  top: 100%; /* Розміщуємо прямо під кнопкою */
-  left: 0;
-  z-index: 10;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #ccc;
-  background: #fafafa;
-  width: 40%; /* Ширина як у кнопки */
-  border-radius: 10px;
-}
-
-/* Стиль окремої опції */
-.products__product_info_size-options-list li {
-  padding: 8px 15px;
-  cursor: pointer;
-}
-
-.products__product_info_size-options-list li:hover,
-.products__product_info_size-options-list li.selected {
-  background-color: #f0f0f0; /* Виділення при наведенні/виборі */
 }
 
 .reviews__images-review {
@@ -599,6 +560,14 @@ footer input ::placeholder {
     justify-content: center;
     gap: 12px;
   }
+  main .products__product_images-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  main .products__product_images-arrow img {
+    width: 40px;
+    height: 40px;
+  }
   main .products__product_images-big {
     width: 370px;
     height: 200px;
@@ -699,9 +668,6 @@ footer input ::placeholder {
   }
   footer .footer_group {
     gap: 8px;
-  }
-  footer .footer_group .footer__product-choose {
-    width: 166px;
   }
   footer .footer__bottom {
     gap: 16px;
