@@ -349,7 +349,7 @@ footer {
         background-repeat: no-repeat;
         background-position: right 12px center;
         &.has-value {
-            color: variables.$black-100; // Той самий колір, що й у <input>
+          color: variables.$black-100; // Той самий колір, що й у <input>
         }
       }
     }
@@ -499,7 +499,16 @@ footer {
   border-radius: 8px;
   border: 1px solid variables.$black-100;
 }
-
+.honeypot-field {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1; /* Ховаємо за іншими елементами */
+  pointer-events: none; /* На нього не можна клікнути */
+}
 //1278px
 @media (max-width: 1286px) {
   body,

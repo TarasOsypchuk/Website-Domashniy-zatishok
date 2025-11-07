@@ -491,6 +491,17 @@ footer input ::placeholder {
   border: 1px solid #373737;
 }
 
+.honeypot-field {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1; /* Ховаємо за іншими елементами */
+  pointer-events: none; /* На нього не можна клікнути */
+}
+
 @media (max-width: 1286px) {
   body,
   input,
