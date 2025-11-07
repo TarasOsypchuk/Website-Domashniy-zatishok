@@ -566,8 +566,6 @@ footer {
         flex-flow: column;
         height: 72px;
 
-        &-title {
-        }
         &-text {
           font-size: 12px;
         }
@@ -707,6 +705,11 @@ footer {
         &-choose {
           width: 340px;
         }
+      }
+      &-button {
+        margin-top: 8px;
+        width: 340px;
+        height: 40px;
       }
       &_group {
         gap: 8px;

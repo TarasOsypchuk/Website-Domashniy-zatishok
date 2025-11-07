@@ -682,6 +682,11 @@ footer input ::placeholder {
   footer .footer__product-choose {
     width: 340px;
   }
+  footer .footer-button {
+    margin-top: 8px;
+    width: 340px;
+    height: 40px;
+  }
   footer .footer_group {
     gap: 8px;
   }
