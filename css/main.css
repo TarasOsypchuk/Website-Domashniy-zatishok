@@ -193,6 +193,8 @@ main .products__product_images .prleft-arrow:hover {
 }
 main .products__product_images-big {
   background-color: #c3c3c3;
+  object-fit: cover;
+  object-position: center;
   width: 560px;
   height: 420px;
   border-radius: 40px;
@@ -374,6 +376,9 @@ footer .footer__product-choose {
   background-image: url(../assets/dropdown_icon_bigger.svg);
   background-repeat: no-repeat;
   background-position: right 12px center;
+}
+footer .footer__product-choose.has-value {
+  color: #373737;
 }
 footer .footer_group {
   display: flex;

@@ -169,7 +169,8 @@ main {
         }
         &-big {
           background-color: #c3c3c3;
-
+          object-fit: cover;
+          object-position: center;
           width: 560px;
           height: 420px;
           border-radius: 40px;
@@ -347,6 +348,9 @@ footer {
         background-image: url(../assets/dropdown_icon_bigger.svg);
         background-repeat: no-repeat;
         background-position: right 12px center;
+        &.has-value {
+            color: variables.$black-100; // Той самий колір, що й у <input>
+        }
       }
     }
     &_group {
