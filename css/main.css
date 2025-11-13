@@ -99,12 +99,12 @@ header {
 .header-button {
   padding: 10px 20px;
   color: #fafafa;
-  background: #5dade2;
+  background: #FB6D6D;
   border-radius: 12px;
   transition: all 0.5s;
 }
 .header-button:hover {
-  background: #0492f1;
+  background: #d22c2c;
 }
 .header-button {
   margin-top: 96px;
@@ -162,7 +162,7 @@ main .products__product_images-arrow {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: rgba(93, 173, 226, 0.3647058824);
+  background-color: rgba(251, 109, 109, 0.1647058824);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +180,7 @@ main .products__product_images .prright-arrow {
 }
 main .products__product_images .prright-arrow:hover {
   transform: scale(1.1);
-  background: #0492f1;
+  background: #d22c2c;
 }
 main .products__product_images .prleft-arrow {
   left: 20px;
@@ -189,7 +189,7 @@ main .products__product_images .prleft-arrow {
 }
 main .products__product_images .prleft-arrow:hover {
   transform: scale(1.1);
-  background: #0492f1;
+  background: #d22c2c;
 }
 main .products__product_images-big {
   background-color: #c3c3c3;
@@ -224,10 +224,11 @@ main .products__product_info-price span {
 main .products__product_info_colors {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 main .products__product_info_colors-color {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 0.5px solid #373737;
   cursor: pointer;
@@ -240,12 +241,12 @@ main .products__product_info_colors-color.selected {
 main .products__product_info-button {
   padding: 10px 20px;
   color: #fafafa;
-  background: #5dade2;
+  background: #FB6D6D;
   border-radius: 12px;
   transition: all 0.5s;
 }
 main .products__product_info-button:hover {
-  background: #0492f1;
+  background: #d22c2c;
 }
 main .products__product_info-button {
   display: flex;
@@ -271,7 +272,7 @@ main .reviews__images-arrow {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background-color: #5dade2;
+  background-color: #FB6D6D;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +285,7 @@ main .reviews__images .right-arrow {
 }
 main .reviews__images .right-arrow:hover {
   transform: scale(1.1);
-  background: #0492f1;
+  background: #d22c2c;
 }
 main .reviews__images .left-arrow {
   left: -30px;
@@ -292,13 +293,15 @@ main .reviews__images .left-arrow {
 }
 main .reviews__images .left-arrow:hover {
   transform: scale(1.1);
-  background: #0492f1;
+  background: #d22c2c;
 }
 main .reviews__images-review {
   width: 200px;
   height: 300px;
   border-radius: 20px;
-  background-color: #c9c9c9;
+  background-color: rgba(255, 255, 255, 0);
+  object-fit: contain;
+  border: 0.5px solid #373737;
 }
 main .reviews__images .review-active {
   width: 228px;
@@ -335,7 +338,7 @@ main .instruction__group_guide-title {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #5dade2;
+  background-color: #FB6D6D;
   font-family: "Amatic SC", sans-serif;
   font-size: 48px;
   font-weight: 400;
@@ -387,12 +390,12 @@ footer .footer_group {
 footer .footer-button {
   padding: 10px 20px;
   color: #fafafa;
-  background: #5dade2;
+  background: #FB6D6D;
   border-radius: 12px;
   transition: all 0.5s;
 }
 footer .footer-button:hover {
-  background: #0492f1;
+  background: #d22c2c;
 }
 footer .footer-button {
   border: 0;
@@ -614,16 +617,13 @@ footer input ::placeholder {
     font-size: 14px;
     gap: 12px;
   }
-  main .products__product_info_colors-color {
-    width: 14px;
-    height: 14px;
-  }
   main .products__product_info_size {
     gap: 12px;
     font-size: 14px;
   }
   main .products__product_info-button {
     width: 380px;
+    margin-top: 16px;
   }
   main .reviews {
     margin-bottom: 52px;
@@ -713,8 +713,7 @@ footer input ::placeholder {
     width: 312px;
   }
   .header__nav .nav-group2 p {
-    margin-right: 92px;
-    width: 100px;
+    margin-right: 112px;
   }
   .header-text {
     width: 312px;
@@ -753,7 +752,10 @@ footer input ::placeholder {
     width: 312px;
   }
   footer .footer_group .footer__product-choose {
-    width: 152px;
+    width: 312px;
+  }
+  footer .footer-button {
+    width: 312px;
   }
   footer input {
     width: 312px;

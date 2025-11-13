@@ -155,7 +155,7 @@ main {
           transition: all 0.5s;
           &:hover {
             transform: scale(1.1);
-            background: #0492f1;
+            background: variables.$blue-100-aktive;
           }
         }
         .prleft-arrow {
@@ -164,7 +164,7 @@ main {
           transition: all 0.5s;
           &:hover {
             transform: scale(1.1);
-            background: #0492f1;
+            background: variables.$blue-100-aktive;
           }
         }
         &-big {
@@ -200,9 +200,10 @@ main {
         &_colors {
           display: flex;
           gap: 16px;
+          align-items: center;
           &-color {
-            width: 20px;
-            height: 20px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             border: 0.5px solid variables.$black-100;
             cursor: pointer;
@@ -253,7 +254,7 @@ main {
         transition: all 0.5s;
         &:hover {
           transform: scale(1.1);
-          background: #0492f1;
+          background: variables.$blue-100-aktive;
         }
       }
       .left-arrow {
@@ -261,14 +262,16 @@ main {
         transition: all 0.5s;
         &:hover {
           transform: scale(1.1);
-          background: #0492f1;
+          background: variables.$blue-100-aktive;
         }
       }
       &-review {
         width: 200px;
         height: 300px;
         border-radius: 20px;
-        background-color: #c9c9c9;
+        background-color: #ffffff00;
+        object-fit: contain;
+        border: 0.5px solid variables.$black-100;
       }
       .review-active {
         width: 228px;
@@ -627,8 +630,8 @@ footer {
             font-size: 14px;
             gap: 12px;
             &-color {
-              width: 14px;
-              height: 14px;
+              // width: 14px;
+              // height: 14px;
             }
           }
           &_size {
@@ -637,6 +640,7 @@ footer {
           }
           &-button {
             width: 380px;
+            margin-top: 16px;
           }
         }
       }
@@ -740,8 +744,7 @@ footer {
       width: 312px;
       .nav-group2 {
         p {
-          margin-right: 92px;
-          width: 100px;
+          margin-right: 112px;
         }
       }
     }
@@ -802,8 +805,11 @@ footer {
       }
       &_group {
         .footer__product-choose {
-          width: 152px;
+          width: 312px;
         }
+      }
+      &-button {
+        width: 312px;
       }
     }
     input {
