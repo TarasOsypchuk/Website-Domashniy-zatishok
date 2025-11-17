@@ -198,10 +198,26 @@ main {
           }
         }
         &_colors {
+          flex-wrap: wrap;
           display: flex;
-          gap: 16px;
+          gap: 6px;
           align-items: center;
+          
+          p{
+            width: 66px;
+            text-align: center;
+          }
+          &_wrapher {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            font-size: 10px;
+            text-align: center;
+            width: 66px;
+            height: 60px;
+          }
           &-color {
+            margin-bottom: 2px;
             width: 32px;
             height: 32px;
             border-radius: 50%;
@@ -627,12 +643,16 @@ footer {
             }
           }
           &_colors {
+            justify-content: center;
+            p{
+              width: 380px;
+            }
             font-size: 14px;
             gap: 12px;
-            &-color {
-              // width: 14px;
-              // height: 14px;
-            }
+            // &-color {
+            // width: 14px;
+            // height: 14px;
+            // }
           }
           &_size {
             gap: 12px;
@@ -769,6 +789,11 @@ footer {
         &_info {
           &-button {
             width: 312px;
+          }
+          &_colors{
+            p{
+              width: 320px;
+            }
           }
         }
       }

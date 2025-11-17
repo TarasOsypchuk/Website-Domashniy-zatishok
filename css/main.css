@@ -222,11 +222,26 @@ main .products__product_info-price span {
   margin-left: 8px;
 }
 main .products__product_info_colors {
+  flex-wrap: wrap;
   display: flex;
-  gap: 16px;
+  gap: 6px;
   align-items: center;
 }
+main .products__product_info_colors p {
+  width: 66px;
+  text-align: center;
+}
+main .products__product_info_colors_wrapher {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 10px;
+  text-align: center;
+  width: 66px;
+  height: 60px;
+}
 main .products__product_info_colors-color {
+  margin-bottom: 2px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -614,6 +629,12 @@ footer input ::placeholder {
     font-size: 13px;
   }
   main .products__product_info_colors {
+    justify-content: center;
+  }
+  main .products__product_info_colors p {
+    width: 380px;
+  }
+  main .products__product_info_colors {
     font-size: 14px;
     gap: 12px;
   }
@@ -729,6 +750,9 @@ footer input ::placeholder {
   }
   main .products__product_info-button {
     width: 312px;
+  }
+  main .products__product_info_colors p {
+    width: 320px;
   }
   main .reviews__images {
     gap: 2px;
