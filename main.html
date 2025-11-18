@@ -36,9 +36,9 @@
         <div class="container">
             <div class="header__nav">
                 <div class="header__nav_group nav-group1">
-                    <p id="scroller-down" data-scroll-to="634">Каталог</p>
-                    <p id="scroller-down" data-scroll-to="1780">Відгуки</p>
-                    <p id="scroller-down" data-scroll-to="3000">Придбати</p>
+                    <p data-scroll-to="#catalog">Каталог</p>
+                    <p data-scroll-to="#reviews">Відгуки</p>
+                    <p data-scroll-to="#buy">Придбати</p>
                 </div>
                 <div class="header__nav_group nav-group2">
                     <p class="copy-on-click" style="cursor: pointer;">+380 98 935 0538</p>
@@ -55,7 +55,7 @@
             <p class="header-text">Ковдри, подушки та постіль — усе, щоб сон був комфортним, а ранок — приємним.
                 Натуральні
                 матеріали, турбота про якість і душа в кожній деталі</p>
-            <a id="scroller-down" data-scroll-to="3000" class="header-button">Зв’язатися</a>
+            <a class="header-button" data-scroll-to="#buy">Зв’язатися</a>
         </div>
         <div class="header__info">
             <div class="header__info_group">
@@ -74,7 +74,7 @@
     </header>
     <main>
         <div class="container">
-            <section class="products">
+            <section class="products" id="catalog">
                 <h2>Каталог</h2>
                 <div class="products__product">
                     <div class="products__product_images">
@@ -158,8 +158,7 @@
                                 <li data-value="XXL">XXL</li>
                             </ul>
                         </div> -->
-                        <a id="scroller-down" data-scroll-to="3000" class="products__product_info-button">Перейти до
-                            заповнення форм</a>
+                        <a class="products__product_info-button" data-scroll-to="#buy">Перейти до заповнення форм</a>
                     </div>
                 </div>
                 <div class="products__product">
@@ -234,12 +233,11 @@
                                 <li data-value="XXL">XXL</li>
                             </ul>
                         </div> -->
-                        <a id="scroller-down" data-scroll-to="3000" class="products__product_info-button">Перейти до
-                            заповнення форм</a>
+                        <a class="products__product_info-button" data-scroll-to="#buy">Перейти до заповнення форм</a>
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section class="reviews" id="reviews">
                 <h2>Відгуки</h2>
                 <div class="reviews__images">
                     <div class="reviews__images-arrow left-arrow"><img src="./assets/arrow_icon.svg" alt="Назад"></div>
@@ -271,7 +269,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer id="buy">
         <select class="footer__product-choose" name="product" id="product-select">
             <option value="" disabled selected>Товар</option>
             <!-- <option value="1">Пухнасті ковдри</option>
