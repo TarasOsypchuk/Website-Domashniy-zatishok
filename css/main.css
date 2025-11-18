@@ -196,7 +196,7 @@ main .products__product_images-big {
   object-fit: cover;
   object-position: center;
   width: 560px;
-  height: 420px;
+  height: 500px;
   border-radius: 40px;
 }
 main .products__product_info {
@@ -604,13 +604,8 @@ footer input ::placeholder {
   }
   main .products__product_images-big {
     width: 370px;
-    height: 200px;
+    height: 300px;
     border-radius: 20px;
-  }
-  main .products__product_images_others-img {
-    width: 120px;
-    height: 60px;
-    border-radius: 10px;
   }
   main .products__product_info {
     align-items: center;
@@ -744,9 +739,7 @@ footer input ::placeholder {
   }
   main .products__product_images-big {
     width: 312px;
-  }
-  main .products__product_images_others-img {
-    width: 101px;
+    height: 280px;
   }
   main .products__product_info-button {
     width: 312px;

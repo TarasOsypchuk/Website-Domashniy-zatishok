@@ -172,7 +172,7 @@ main {
           object-fit: cover;
           object-position: center;
           width: 560px;
-          height: 420px;
+          height: 500px;
           border-radius: 40px;
         }
       }
@@ -616,16 +616,10 @@ footer {
           }
           &-big {
             width: 370px;
-            height: 200px;
+            height: 300px;
             border-radius: 20px;
           }
-          &_others {
-            &-img {
-              width: 120px;
-              height: 60px;
-              border-radius: 10px;
-            }
-          }
+          
         }
         &_info {
           align-items: center;
@@ -779,11 +773,7 @@ footer {
         &_images {
           &-big {
             width: 312px;
-          }
-          &_others {
-            &-img {
-              width: 101px;
-            }
+            height: 280px;
           }
         }
         &_info {
